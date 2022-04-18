@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5B8F87BE280D509100EA0116 /* RLMarsiOSDemoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8F87BC280D509100EA0116 /* RLMarsiOSDemoLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8F87C7280D8F1700EA0116 /* DemoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8F87C6280D8F1700EA0116 /* DemoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B8F87B9280D509100EA0116 /* RLMarsiOSDemoLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RLMarsiOSDemoLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8F87BC280D509100EA0116 /* RLMarsiOSDemoLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLMarsiOSDemoLib.h; sourceTree = "<group>"; };
 		5B8F87BD280D509100EA0116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8F87C6280D8F1700EA0116 /* DemoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		5B8F87BB280D509100EA0116 /* RLMarsiOSDemoLib */ = {
 			isa = PBXGroup;
 			children = (
+				5B8F87C5280D8EFA00EA0116 /* Classes */,
 				5B8F87BC280D509100EA0116 /* RLMarsiOSDemoLib.h */,
 				5B8F87BD280D509100EA0116 /* Info.plist */,
 			);
 			path = RLMarsiOSDemoLib;
+			sourceTree = "<group>";
+		};
+		5B8F87C5280D8EFA00EA0116 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B8F87C6280D8F1700EA0116 /* DemoTest.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					5B8F87B8280D509100EA0116 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8F87C7280D8F1700EA0116 /* DemoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		5B8F87C2280D509100EA0116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4KXK7XJ7V7;
@@ -277,6 +291,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taptap.test.RLMarsiOSDemoLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +301,7 @@
 		5B8F87C3280D509100EA0116 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4KXK7XJ7V7;
@@ -301,6 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taptap.test.RLMarsiOSDemoLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

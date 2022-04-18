@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => "Copyright 2022 TapTap. All rights Reserved." }
   s.author           = { "AndrewRen" => "renyaowu12@163.com" }
   s.source           = { :git => 'git@github.com:renlong/RLMarsiOSDemoLib.git', :tag => '1.0.1' }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = "5.0"
-  s.source_files = 'RLMarsiOSDemoLib/**/*'
+  s.source_files = 'RLMarsiOSDemoLib/Classes/**/*'
 end
 
